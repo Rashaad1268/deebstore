@@ -1,0 +1,2 @@
+<script>import { page } from '$app/state';</script>
+<svelte:head><title>{page.status} — deebstore</title></svelte:head><section><p>{page.status}</p><h1>{page.status === 404 ? 'That piece isn’t here' : 'Something went sideways'}</h1><a href="/">Return to the gallery →</a></section><style>section{min-height:65vh;padding:12vh var(--pad);text-align:center}p{font-size:.7rem;letter-spacing:.15em}h1{font:4rem var(--serif)}</style>
